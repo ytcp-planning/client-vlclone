@@ -15,9 +15,9 @@ const styleTagA = {
   textDecoration: 'underline',
 }
 const data = [
-  <span style={{ fontWeight: '500' }}>{`=> Video hướng dẫn:  `}<a style={styleTagA} className="text-hover fw-bold">{`-->Xem Ngay<--`}</a></span>,
-  <span style={{ fontWeight: '500' }}>{`=> Tham khảo chính sách bảo hành `}<a style={styleTagA} className="text-hover fw-bold">{`-->Tại Đây<--`}</a></span>,
-  <span style={{ fontWeight: '500' }}>{`=> Nếu yêu cầu hỗ trợ và bảo hành  `}<a style={styleTagA} className="text-hover fw-bold">{` --> Tham gia nhóm hỗ trợ <--`}</a></span>,
+  <span key={1} style={{ fontWeight: '500' }}>{`=> Video hướng dẫn:  `}<a style={styleTagA} className="text-hover fw-bold">{`-->Xem Ngay<--`}</a></span>,
+  <span key={2} style={{ fontWeight: '500' }}>{`=> Tham khảo chính sách bảo hành `}<a style={styleTagA} className="text-hover fw-bold">{`-->Tại Đây<--`}</a></span>,
+  <span key={3} style={{ fontWeight: '500' }}>{`=> Nếu yêu cầu hỗ trợ và bảo hành  `}<a style={styleTagA} className="text-hover fw-bold">{` --> Tham gia nhóm hỗ trợ <--`}</a></span>,
 ];
 
 export default function Home() {
@@ -80,8 +80,8 @@ export default function Home() {
         </div>
       </Card>
       <Card title="Danh sách sản phẩm">
-        {[1,2,3].map(e => {
-          return <Card style={{boxShadow: '0px 0px 4px #bdbdbd'}} title="Title nè mấy má (Bên trong tui chứa sản phẩm nhen) Quẹo lựa" className="mb-3" headStyle={{background: 'linear-gradient(135deg,#d262e3 0,#0665d0 100%)', color: '#fff'}}>
+        {[1,2,3].map((e,i) => {
+          return <Card key={i} style={{boxShadow: '0px 0px 4px #bdbdbd'}} title="Title nè mấy má (Bên trong tui chứa sản phẩm nhen) Quẹo lựa" className="mb-3" headStyle={{background: 'linear-gradient(135deg,#d262e3 0,#0665d0 100%)', color: '#fff'}}>
             <ListProductHomePage/>
           </Card> 
         })}

@@ -104,19 +104,10 @@ export default function ListProductHomePage ({data1}){
         'Man charged over missing wedding girl.',
         'Los Angeles battles huge wildfires.',
       ];
-    const renderBtn = (e) => {
-        if(e.quantity > 0) return [<Button size="large" type="primary" icon={<ShoppingCartOutlined />} >Mua hàng</Button>]
-        return [<ConfigProvider theme={{
-            token: {
-                colorPrimary: '#e04f1a'
-            }
-        }}>
-            <Button type="primary" size="large"  icon={<FrownOutlined />} >Hết hàng</Button>
-        </ConfigProvider>]
-    }
+
     return <Row gutter={[16,16]}>
-        {listProd.map(e => {
-            return <Col xxl={4} xl={6} lg={8} md={12} sm={24} xs={24}>
+        {listProd.map((e,i) => {
+            return <Col key={i} xxl={4} xl={6} lg={8} md={12} sm={24} xs={24}>
                 <Card className="product-card-homepage" title={e.title} headStyle={{background: 'rgb(59, 160, 233)', color: '#fff'}} actions={renderBtn(e)} bodyStyle={{height: 200, overflow: 'auto'}}>
                 <div>
                     {/* {Int1} */}
@@ -125,7 +116,7 @@ export default function ListProductHomePage ({data1}){
                     bordered={false}
                     dataSource={e.feature}
                     renderItem={(item) => (
-                        <div>
+                        <div key={item.text}>
                            <Typography.Paragraph className="mb-0" ellipsis={{tooltip:item.text,rows: 2}}><CheckOutlined />  {item.text}</Typography.Paragraph>
                         </div>
                     )}
@@ -134,4 +125,15 @@ export default function ListProductHomePage ({data1}){
             </Col>
         })} 
     </Row>
+}
+
+const renderBtn = (e) => {
+    if(e.quantity > 0) return [<Button size="large" type="primary" icon={<ShoppingCartOutlined />} >Mua hàng</Button>]
+    return [<ConfigProvider theme={{
+        token: {
+            colorPrimary: '#e04f1a'
+        }
+    }}>
+        <Button type="primary" size="large"  icon={<FrownOutlined />} >Hết hàng</Button>
+    </ConfigProvider>]
 }
