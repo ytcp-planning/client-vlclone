@@ -15,10 +15,10 @@ function getItem(label, key, icon, children, type) {
 const items = [
   getItem(<Link href={'/profile'}>Tài khoản</Link>, 'account', <UserOutlined />),
   getItem('THANH TOÁN', 'grp', null, [
-  getItem('Nạp tiền', '1', <MoneyCollectOutlined />),
-  getItem('Lịch sử giao dịch', '2', <CreditCardOutlined />),
-  getItem('Lịch sử mua hàng', '3', <HistoryOutlined />),
-  getItem('Gửi ticket hỗ trợ', '4', <ContainerOutlined />),
+  getItem(<Link href={'/recharge'}>Nạp tiền</Link>, '1', <MoneyCollectOutlined />),
+  getItem(<Link href={"/history-transaction"}>Lịch sử giao dịch</Link>, '2', <CreditCardOutlined />),
+  getItem(<Link href={'/history-order'}>Lịch sử mua hàng</Link>, '3', <HistoryOutlined />),
+  getItem(<Link href={'/ticket-support'}>Gửi ticket hỗ trợ</Link>, '4', <ContainerOutlined />),
   getItem('Mua hàng', 'sub1', <OrderedListOutlined />, [
     getItem('Bộ sản phẩm 5', '5', <ContainerOutlined />),
     getItem('Bộ sản phẩm 6', '6', <ContainerOutlined />),
@@ -26,11 +26,11 @@ const items = [
     getItem('Bộ sản phẩm 8', '8', <ContainerOutlined />),
   ]),], 'group'),
   getItem('CÔNG CỤ', 'grp', null, [
-    getItem('Tạp phôi XMDT', '10', <PieChartOutlined />),
-    getItem('Kết nối API', '11',  <ApiOutlined />),
-    getItem('Check live UID', '12', <ContainerOutlined />),
-    getItem('2FA Tool', '14', <LockOutlined />),
-    getItem('Hỗ trợ', '15', <CustomerServiceOutlined />),
+    getItem(<Link href={"/create-xmdt"}>Tạp phôi XMDT</Link>, '10', <PieChartOutlined />),
+    getItem(<Link href={'/connect-api'}>Kết nối API</Link>, '11',  <ApiOutlined />),
+    getItem(<Link href={'/check-live-uid'}>Check live UID</Link>, '12', <ContainerOutlined />),
+    getItem(<Link href={'/2fa-tool'}>2FA Tool</Link>, '14', <LockOutlined />),
+    getItem(<Link href={'/support'}>Hỗ trợ</Link>, '15', <CustomerServiceOutlined />),
   ], 'group'),
 ];
 const renderNav = (_nav)=>{
@@ -41,13 +41,14 @@ const renderNav = (_nav)=>{
 const DefaultNavigate = ({ collapsed }) => {
   return (
     <Menu
-      style={{minHeight: '100vh'}}
+      style={{minHeight: 'calc(100vh - 120px)'}}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode="inline"
       theme="light"
       collapsed={collapsed}
       items={items}
+      
     />
   );
 };

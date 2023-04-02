@@ -3,7 +3,7 @@ import { Avatar, Button, Card, Checkbox, ConfigProvider, FloatButton, Form, Inpu
 import Head from "next/head";
 import { useRouter } from "next/router";
 import ListProduct from "./ListProduct";
-
+import {Logo} from "../../images/index"
 export default function Login() {
     const router = useRouter()
     const handleLogin = ()=>{
@@ -19,7 +19,7 @@ export default function Login() {
             <div style={{ background: 'rgba(5,77,158,.8)', minHeight: '100vh', position: 'relative' }} className="pt-4 px-2 pb-4">
                 <Card className="w-100 " style={{ maxWidth: '500px', margin: '0 auto', borderRadius: 0 }}>
                     <div className="text-center"> 
-                        <Avatar src={"https://vlclone.com/public/logo_vlclone.png"} style={{ width: 150, height: 150 }}></Avatar>
+                        <Avatar src={Logo.src} style={{ width: 150, height: 150 }}></Avatar>
                         <h1 className="text-logo mb-0">VLclone.com</h1>
                         <span className="text-uppercase fw-bold" style={{ color: '#6c757d' }}>Đăng nhập</span>
                     </div>

@@ -24,7 +24,9 @@ export default function LayoutHomePage({children}) {
         backgroundColor: '#3ba0e9',
         position: 'fixed',
         left: 0,
-        zIndex: 2
+        zIndex: 2,
+        height: "100%",
+        overflow: 'auto'
     };
     useEffect(() => {
         if (width) {
@@ -86,7 +88,7 @@ export default function LayoutHomePage({children}) {
                   
                 </Layout>
             </Layout>
-            <div className='text-center' style={{ fontSize: '12px' }}>Copyright © 2023 Powered by YTcp Planning</div>
+            <div className='text-center mt-2' style={{ fontSize: '12px' }}>Copyright © 2023 Powered by YTcp Planning</div>
         </div>
     )
 }
