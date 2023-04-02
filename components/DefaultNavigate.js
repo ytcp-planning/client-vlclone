@@ -46,7 +46,7 @@ const DefaultNavigate = ({ collapsed }) => {
       defaultOpenKeys={['sub1']}
       mode="inline"
       theme="light"
-      collapsed={collapsed}
+      collapsed={collapsed.toString()}
       items={items}
       
     />

@@ -7,11 +7,14 @@ import Head from 'next/head'
 import LayoutHomePage from '../components/Layouts/Layout'
 import { useRouter } from 'next/router'
 import {Logo} from '../images/index'
+import { ConfigProvider } from 'antd';
 const roboto = Roboto({
   weight: ['400', '500', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
 })
+
+ConfigProvider.disableRuntimeThemeWarnings = true;
 
 export default function MyApp({ Component, pageProps }) {
   const { asPath } = useRouter();  
