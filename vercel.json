@@ -3,9 +3,7 @@
   "builds": [
     {
       "src": "next.config.js",
-      "use": "@vercel/next",
-      "command": "yarn run build",
-      "output": "dist"
+      "use": "@vercel/next"
     }
   ],
   "routes": [
