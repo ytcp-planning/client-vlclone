@@ -1,7 +1,6 @@
 import { CopyOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Col, message, Row } from "antd";
 import Head from "next/head";
-import Image from "next/image";
 import { Logo } from "../../images";
 
 export default function Recharge() {
