@@ -1,4 +1,5 @@
-import '../styles/bootstrap.min.css'
+import 'antd/dist/reset.css';
+import '../styles/bootstrap.min.css';
 import '../styles/globals.css'
 import '../styles/animation.css'
 import '../styles/editor.css'
@@ -8,6 +9,7 @@ import LayoutHomePage from '../components/Layouts/Layout'
 import { useRouter } from 'next/router'
 import {Logo} from '../images/index'
 import { ConfigProvider } from 'antd';
+
 const roboto = Roboto({
   weight: ['400', '500', '700'],
   style: ['normal', 'italic'],
