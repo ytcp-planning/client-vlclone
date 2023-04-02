@@ -6,8 +6,11 @@
       "use": "@vercel/next"
     }
   ],
-  "install": {
-    "command": "yarn install"
+  "@vercel/next": {
+    "buildCommand": "npm run build"
+  },
+  "installConfig": {
+    "yarn": true
   },
   "routes": [
     {
