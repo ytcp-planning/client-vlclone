@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "static": {
-    "includes": ["node_modules/antd/dist/reset.css"]
-  },
   "builds": [
     {
       "src": "next.config.js",
