@@ -108,11 +108,11 @@ export default function ListProductHomePage ({data1}){
 
 const renderBtn = (e) => {
     if(e.quantity > 0) return [<Button key={1} size="large" type="primary" icon={<ShoppingCartOutlined />} >Mua hàng</Button>]
-    return [<ConfigProvider theme={{
+    return [<ConfigProvider  key={1} theme={{
         token: {
             colorPrimary: '#e04f1a'
         }
     }}>
-        <Button key={1} type="primary" size="large"  icon={<FrownOutlined />} >Hết hàng</Button>
+        <Button type="primary" size="large"  icon={<FrownOutlined />} >Hết hàng</Button>
     </ConfigProvider>]
 }
