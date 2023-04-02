@@ -1,4 +1,3 @@
-import LayoutHomePage from "../components/Layouts/Layout";
 import { useState } from 'react'
 import { Card, Row, Col, List, Input, Select, Divider, Button } from 'antd';
 import Head from "next/head";
