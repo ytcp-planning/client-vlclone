@@ -11,49 +11,19 @@ export default function ListProductHomePage ({data1}){
             feature: [
                 {
                     id: 1,
+                    key: 1,
                     text: 'Racing car sprays burning fuel into crowd.Racing car sprays burning fuel into crowd.'
                 },
                 {
                     id: 2,
-                    text: ' Phù hợp nắm TKCN'
-                },
-                {
-                    id: 2,
-                    text: ' Phù hợp nắm TKCN'
-                },
-                {
-                    id: 2,
-                    text: ' Phù hợp nắm TKCN'
-                },
-                {
-                    id: 2,
-                    text: ' Phù hợp nắm TKCN'
-                },
-                {
-                    id: 2,
+                    key: 2,
                     text: ' Phù hợp nắm TKCN'
                 },
                 {
                     id: 3,
-                    text: 'Limit 25-50$'
-                },
-                
-                {
-                    id: 3,
-                    text: 'Limit 25-50$'
-                },
-                {
-                    id: 3,
-                    text: 'Limit 25-50$'
-                },
-                {
-                    id: 3,
-                    text: 'Limit 25-50$'
-                },
-                {
-                    id: 3,
-                    text: 'Limit 25-50$'
-                },
+                    key: 3,
+                    text: ' Phù hợp nắm TKCN'
+                }, 
             ]
         },
         {
