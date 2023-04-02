@@ -1,6 +1,7 @@
 import { CopyOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Col, message, Row } from "antd";
 import Head from "next/head";
+import Image from "next/image";
 import { Logo } from "../../images";
 
 export default function Recharge() {
@@ -36,7 +37,7 @@ export default function Recharge() {
                             Hoặc quét mã bên dưới để tự động điền STK và Nội dung chuyển khoản
                         </div>
                         <div className="p-4">
-                            <img style={{ width: '100%' }} src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN NGOC HOANG LONG?memo=vlclone 9920&is_mask=0&bg=16" />
+                            <Image alt="prop" style={{ width: '100%' }} src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN NGOC HOANG LONG?memo=vlclone 9920&is_mask=0&bg=16" />
                         </div>
                         <div className="px-3" style={{ position: 'absolute', top: 10, right: 0, background: '#e4e9f3', color: '#495057', borderTopLeftRadius: 4, borderBottomLeftRadius: 4, lineHeight: '28px' }}>
                             VIETCOMBANK
@@ -57,7 +58,7 @@ export default function Recharge() {
                             Hoặc quét mã bên dưới để tự động điền STK và Nội dung chuyển khoản
                         </div>
                         <div className="p-4">
-                            <img style={{ width: '100%' }} src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN NGOC HOANG LONG?memo=vlclone 9920&is_mask=0&bg=16" />
+                            <Image alt="prop" style={{ width: '100%' }} src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN NGOC HOANG LONG?memo=vlclone 9920&is_mask=0&bg=16" />
                         </div>
                         <div className="px-3" style={{ position: 'absolute', top: 10, right: 0, background: '#e4e9f3', color: '#495057', borderTopLeftRadius: 4, borderBottomLeftRadius: 4, lineHeight: '28px' }}>
                             VIETCOMBANK
@@ -78,7 +79,7 @@ export default function Recharge() {
                             Hoặc quét mã bên dưới để tự động điền STK và Nội dung chuyển khoản
                         </div>
                         <div className="m-4">
-                            <img style={{ width: '100%' }} src={Logo.src} />
+                            <Image alt="img" style={{ width: '100%' }} src={Logo.src} />
                         </div>
                         <div className="px-3" style={{ position: 'absolute', top: 10, right: 0, background: '#e4e9f3', color: '#495057', borderTopLeftRadius: 4, borderBottomLeftRadius: 4, lineHeight: '28px' }}>
                             VIETCOMBANK
