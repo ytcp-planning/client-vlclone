@@ -6,6 +6,9 @@
       "use": "@vercel/next"
     }
   ],
+  "install": {
+    "command": "yarn install"
+  },
   "routes": [
     {
       "src": "/api/(.*)",
