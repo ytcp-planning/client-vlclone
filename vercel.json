@@ -1,29 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "api/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ],
-    "env": {
-      "NEXT_API": "https://localhost:0402/"
+  "version": 2,
+  "static": {
+    "includes": ["node_modules/antd/dist/reset.css"]
+  },
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next",
+      "command": "yarn run build",
+      "output": "dist"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/$1"
     },
-    "static": {
-        "includes": [
-          "node_modules/antd/dist/reset.css"
-        ]
-      }
-      
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "NEXT_API": "https://localhost:0402/"
   }
-  
+}
