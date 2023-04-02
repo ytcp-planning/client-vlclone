@@ -34,14 +34,17 @@ export default function ListProductHomePage ({data1}){
             feature: [
                 {
                     id: 1,
+                    key: 1,
                     text: 'Limit 25-50$'
                 },
                 {
                     id: 2,
+                    key: 2,
                     text: ' Phù hợp nắm TKCN'
                 },
                 {
                     id: 3,
+                    key: 3,
                     text: 'Limit 25-50$'
                 }
             ]
@@ -54,14 +57,17 @@ export default function ListProductHomePage ({data1}){
             feature: [
                 {
                     id: 1,
+                    key: 1,
                     text: 'Limit 25-50$'
                 },
                 {
                     id: 2,
+                    key: 2,
                     text: ' Phù hợp nắm TKCN'
                 },
                 {
                     id: 3,
+                    key: 3,
                     text: 'Limit 25-50$'
                 }
             ]
@@ -86,7 +92,7 @@ export default function ListProductHomePage ({data1}){
                     bordered={false}
                     dataSource={e.feature}
                     renderItem={(item) => (
-                        <div key={item.text}>
+                        <div key={item.key}>
                            <Typography.Paragraph className="mb-0" ellipsis={{tooltip:item.text,rows: 2}}><CheckOutlined />  {item.text}</Typography.Paragraph>
                         </div>
                     )}
