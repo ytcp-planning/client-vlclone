@@ -1,7 +1,8 @@
 import { CopyOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Col, message, Row } from "antd";
 import Head from "next/head";
-import { Logo } from "../../images";
+// import Image from "next/image";
+// import { Logo } from "../../images";
 
 export default function Recharge() {
     const handleCopyText = (text) => {
@@ -36,14 +37,14 @@ export default function Recharge() {
                             Hoặc quét mã bên dưới để tự động điền STK và Nội dung chuyển khoản
                         </div>
                         <div className="p-4">
-                            {/* <img  alt="prop" style={{ width: '100%' }} src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN%20NGOC%20HOANG%20LONG?memo=vlclone%209920&is_mask=0&bg=16" /> */}
+                            {/* <Image width={'100%'} height={'100%'}  alt="img"  src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN%20NGOC%20HOANG%20LONG?memo=vlclone%209920&is_mask=0&bg=16" /> */}
                         </div>
                         <div className="px-3" style={{ position: 'absolute', top: 10, right: 0, background: '#e4e9f3', color: '#495057', borderTopLeftRadius: 4, borderBottomLeftRadius: 4, lineHeight: '28px' }}>
                             VIETCOMBANK
                         </div>
                     </div> 
                 </Col>
-                {/* <Col sm={12} xs={24} md={12} lg={8} xxl={6} >
+                <Col sm={12} xs={24} md={12} lg={8} xxl={6} >
                     <div style={{ background: 'green', position:'relative',height: '100%', height: '100%'  }}>
                         <div className="text-start px-4 pt-3" style={{ color: '#fff', fontWeight: '600', fontSize: '15px' }}>
                             <div className="text-center">
@@ -57,7 +58,7 @@ export default function Recharge() {
                             Hoặc quét mã bên dưới để tự động điền STK và Nội dung chuyển khoản
                         </div>
                         <div className="p-4">
-                            <img  alt="prop" style={{ width: '100%' }} src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN%20NGOC%20HOANG%20LONG?memo=vlclone%209920&is_mask=0&bg=16" />
+                            {/* <Image width={'100%'} height={'100%'}   alt="img"  src="https://qr.ecaptcha.vn/api/generate/vcb/6691999999/NGUYEN%20NGOC%20HOANG%20LONG?memo=vlclone%209920&is_mask=0&bg=16" /> */}
                         </div>
                         <div className="px-3" style={{ position: 'absolute', top: 10, right: 0, background: '#e4e9f3', color: '#495057', borderTopLeftRadius: 4, borderBottomLeftRadius: 4, lineHeight: '28px' }}>
                             VIETCOMBANK
@@ -78,13 +79,13 @@ export default function Recharge() {
                             Hoặc quét mã bên dưới để tự động điền STK và Nội dung chuyển khoản
                         </div>
                         <div className="m-4">
-                            <img  alt="img" style={{ width: '100%' }} src={Logo.src} />
+                            {/* <Image width={'100%'} height={'100%'}   alt="img"  src={Logo.src} /> */}
                         </div>
                         <div className="px-3" style={{ position: 'absolute', top: 10, right: 0, background: '#e4e9f3', color: '#495057', borderTopLeftRadius: 4, borderBottomLeftRadius: 4, lineHeight: '28px' }}>
                             VIETCOMBANK
                         </div>
                     </div> 
-                </Col> */}
+                </Col>
             </Row>
         </Card>
     </div>
