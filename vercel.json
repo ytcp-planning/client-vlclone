@@ -18,6 +18,12 @@
     ],
     "env": {
       "NEXT_API": "https://localhost:0402/"
-    }
+    },
+    "static": {
+        "includes": [
+          "node_modules/antd/dist/reset.css"
+        ]
+      }
+      
   }
   
