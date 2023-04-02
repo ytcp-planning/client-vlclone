@@ -5,6 +5,7 @@ export default function ListProductHomePage ({data1}){
     const listProd = [
         {
             id: 1,
+            key: 1,
             title: 'BM50$ Ngâm 6 Tháng',
             price: 15000,
             quantity: 1,
@@ -28,6 +29,7 @@ export default function ListProductHomePage ({data1}){
         },
         {
             id: 2,
+            key: 2,
             title: 'BM50$ Ngâm 6 Tháng',
             price: 15000,
             quantity: 0,
@@ -50,7 +52,8 @@ export default function ListProductHomePage ({data1}){
             ]
         },
         {
-            id: 2,
+            id: 3,
+            key: 3,
             title: 'BM50$ Ngâm 6 Tháng',
             price: 15000,
             quantity: 1,
